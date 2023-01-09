@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/box.css">
+</head>
+<body>
+    <section class="nav-logo">
+        <div class="container">
+            <div class="nav" id="fixedNav">
+
+                <div class="menu">
+                    <ul class="menu-ul">
+                        <li class="home-light">
+                            <a onclick="boxChange('tab1','button1')" id="button1">BOX-1</a>
+                        </li>
+                        <li>
+                            <a onclick="boxChange('tab2','button2')" id="button2">BOX-2</a>
+                        </li>
+                        <li>
+                            <a onclick="boxChange('tab3','button3')" id="button3">BOX-3</a>
+                        </li>
+                        <li>
+                            <a onclick="boxChange('tab4','button4')" id="button4">BOX-4</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="tab-1 active" id="tab1">
+        <h1>BOX-1</h1>
+        <p class="top-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae perspiciatis ipsam a error laborum exercitationem quidem repellendus qui quam eius nisi libero tempora temporibus repudiandae, quo mollitia nihil consectetur.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eligendi reprehenderit praesentium vitae eveniet neque sit natus atque maiores? Et, repellat expedita. Tenetur dolor omnis accusamus est voluptatum ratione ducimus.
+        </p>
+        <p class="last-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, iure. Nemo aspernatur, mollitia, iste soluta expedita officiis aliquid provident nostrum magnam dolore veniam quasi. Delectus numquam porro quae nesciunt non.
+
+        </p>
+
+    </section>
+    <section class="tab-2 active" id="tab2">
+        <h1>BOX-2</h1>
+        <p class="top-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae perspiciatis ipsam a error laborum exercitationem quidem repellendus qui quam eius nisi libero tempora temporibus repudiandae, quo mollitia nihil consectetur.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eligendi reprehenderit praesentium vitae eveniet neque sit natus atque maiores? Et, repellat expedita. Tenetur dolor omnis accusamus est voluptatum ratione ducimus.
+        </p>
+        <p class="last-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, iure. Nemo aspernatur, mollitia, iste soluta expedita officiis aliquid provident nostrum magnam dolore veniam quasi. Delectus numquam porro quae nesciunt non.
+
+        </p>
+
+
+
+    </section>
+    <section class="tab-3 active" id="tab3">
+        <h1>BOX-3</h1>
+        <p class="top-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae perspiciatis ipsam a error laborum exercitationem quidem repellendus qui quam eius nisi libero tempora temporibus repudiandae, quo mollitia nihil consectetur.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eligendi reprehenderit praesentium vitae eveniet neque sit natus atque maiores? Et, repellat expedita. Tenetur dolor omnis accusamus est voluptatum ratione ducimus.
+        </p>
+        <p class="last-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, iure. Nemo aspernatur, mollitia, iste soluta expedita officiis aliquid provident nostrum magnam dolore veniam quasi. Delectus numquam porro quae nesciunt non.
+
+        </p>
+
+
+
+    </section>
+    <section class="tab-4 active" id="tab4">
+        <h1>BOX-4</h1>
+        <p class="top-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae perspiciatis ipsam a error laborum exercitationem quidem repellendus qui quam eius nisi libero tempora temporibus repudiandae, quo mollitia nihil consectetur.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus eligendi reprehenderit praesentium vitae eveniet neque sit natus atque maiores? Et, repellat expedita. Tenetur dolor omnis accusamus est voluptatum ratione ducimus.
+        </p>
+        <p class="last-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, iure. Nemo aspernatur, mollitia, iste soluta expedita officiis aliquid provident nostrum magnam dolore veniam quasi. Delectus numquam porro quae nesciunt non.
+
+        </p>
+
+
+
+    </section>
+
+
+    <script>
+         boxChange('tab1','button1')
+        function boxChange(tabName,activecolor) {
+
+            document.getElementById('tab1').style.display = 'none'
+            document.getElementById('tab2').style.display = 'none'
+            document.getElementById('tab3').style.display = 'none'
+            document.getElementById('tab4').style.display = 'none'
+            document.getElementById(tabName).style.display = 'block'
+
+
+            document.getElementById('button1').style.color ='white'
+            document.getElementById('button2').style.color ='white'
+            document.getElementById('button3').style.color ='white'
+            document.getElementById('button4').style.color ='white'
+
+            document.getElementById(activecolor).style.color ='red'
+
+        }
+    </script>
+    
+</body>
+</html>
