@@ -26,7 +26,7 @@ ul.menu-ul li {
     align-items: center;
 }
 .tab-1 {
-    height: 500px;
+  
     background-color: #dbdbdb;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ ul.menu-ul li {
     padding: 30px;
 }
 .tab-2 {
-    height: 500px;
+   
     background-color: #dbdbdb;
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@ ul.menu-ul li {
     padding: 30px;
 }
 .tab-3 {
-    height: 500px;
+   
     background-color: #dbdbdb;
     display: flex;
     align-items: center;
@@ -53,7 +53,7 @@ ul.menu-ul li {
     padding: 30px;
 }
 .tab-4 {
-    height: 500px;
+    
     background-color: #dbdbdb;
     display: flex;
     align-items: center;
@@ -64,4 +64,23 @@ ul.menu-ul li {
 p.last-p {
     font-style: oblique;
     font-family: monospace;
+}
+
+img {
+    width: 100%;
+}
+h1 {
+    color: cornflowerblue;
+    text-align: center;
+    margin-bottom: 30px;
+}
+p.top-p {
+    font-style: italic;
+}
+p.last-p {
+    font-style: revert;
+    font-family: cursive;
+    margin: 10px 0 20px;
+    font-size: 11px;
+    color: #6f4cfb;
 }
